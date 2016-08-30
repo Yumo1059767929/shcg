@@ -1,0 +1,31 @@
+/*列表*/
+
+.z-bz {
+    border: none;
+    padding-bottom: 1.5rem;
+}
+
+.z-bz li {
+    border-bottom: 1px solid #bebebe;
+}
+
+
+/*报修按钮*/
+
+.z-btn {
+    display: block;
+    background: #105d7d;
+    width: 6.4rem;
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .3rem;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.z-btn:visited {
+    color: #fff;
+}

@@ -1,0 +1,40 @@
+/*日期*/
+
+.z-date {
+    width: 100%;
+    height: .74rem;
+    background: #fff;
+    border-bottom: 1px solid #aaaaaa;
+    font-size: .3rem;
+    color: #105d7d;
+    margin-bottom: .1rem;
+}
+
+.z-date div {
+    text-align: center;
+    line-height: .74rem;
+}
+
+.z-date select {
+    width: 1.24rem;
+    height: .42rem;
+    border-radius: .1rem;
+    border: 1px solid #105d7d;
+    font-size: .22rem;
+    color: #105d7d;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+
+/*列表*/
+
+.zList li a div:nth-child(1) {
+    height: 100%;
+    padding-top: .32rem;
+    text-align: left;
+    font-size: .18rem;
+    color: #7d7d7d;
+    line-height: .32rem;
+    padding-left: .1rem;
+}

@@ -1,0 +1,8 @@
+.zList li div:nth-child(1) img {
+    width: 1.05rem;
+    height: 1.11rem;
+}
+
+.zList li div:nth-child(2) {
+    padding-top: .32rem;
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>报修-B座5楼男卫生间</title>
+    <link rel="stylesheet" type="text/css" href="publish/css/base.css">
+    <link rel="stylesheet" type="text/css" href="publish/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="publish/css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/wu_common.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <style>
+        .row {
+            margin: 0;
+        }
+        
+        .btn-switch *,
+        .btn-switch *:before,
+        .btn-switch *:after {
+            box-sizing: border-box;
+        }
+        
+        .btn-switch {
+            display: inline-block;
+            width: 1rem;
+            border-radius: 25px;
+            background: linear-gradient( WhiteSmoke, DarkGray);
+            box-shadow: 0 0 5px rgba( 0, 0, 0, .4), 1px 1px 8px rgba( 0, 0, 0, .3);
+            margin: 0 auto;
+        }
+        
+        .btn-switch input {
+            display: none
+        }
+        
+        .btn-switch label {
+            position: absolute;
+            top: .1rem;
+            right: .08rem;
+            width: .6rem;
+            height: .3rem;
+            line-height: .88rem;
+            border-radius: .4rem;
+            background: #ccc;
+            box-shadow: inset 0 3px 8px 1px rgba(0, 0, 0, .4), 0 1px 0 0 rgba(255, 255, 255, .5);
+            cursor: pointer;
+        }
+        
+        .btn-switch span::before {
+            content: " ";
+            position: absolute;
+            width: .3rem;
+            height: .3rem;
+            background: linear-gradient( #F7F2F6, #B2AC9E);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3), 0 5px 5px rgba(0, 0, 0, 0.2);
+            border-radius: .48rem;
+            left: -.04rem;
+            top: 0rem;
+        }
+        
+        .btn-switch span::after {
+            content: " ";
+            position: absolute;
+            left: .2rem;
+            top: .2rem;
+            border-radius: .24rem;
+            background: linear-gradient( #CBC7BC, #D2CBC3);
+        }
+        
+        .btn-switch input:checked+label {
+            background: #0b75a1;
+        }
+        
+        .btn-switch input:checked~label span::before {
+            right: -.04rem;
+            left: auto;
+        }
+        
+        .btn-switch input:checked~label span::after {
+            right: .2rem;
+            left: auto;
+        }
+        
+        .dz-default {
+            display: none;
+        }
+        
+        .dropzone .dz-preview .dz-details img,
+        .dropzone-previews .dz-preview .dz-details img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 90px;
+            float: left;
+        }
+        
+        .dropzone .dz-preview .dz-details .dz-filename,
+        .dropzone-previews .dz-preview .dz-details .dz-filename {
+            overflow: hidden;
+            height: 100%;
+            display: none;
+        }
+        
+        #my-awesome-dropzone {
+            /*            width: 100%;*/
+            min-height: 102px;
+            background-image: url(images/addimg.png);
+            background-repeat: no-repeat;
+            margin: 10px;
+        }
+        
+        .divs {
+            width: 74px;
+            height: 82px;
+            background-image: url(images/addimg.png);
+            background-size: 100% 100%;
+            margin: .12rem 0rem .12rem .11rem;
+            display: inline-block;
+            visibility: hidden;
+        }
+        
+        .dropzone .dz-preview .dz-details,
+        .dropzone-previews .dz-preview .dz-details {
+            width: 60px;
+            height: 88px;
+            position: relative;
+            background: #ebebeb;
+        }
+        
+        #my-awesome-dropzone .dropzone .dz-preview:first-child {
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="cont1">
+            <div class="box1">
+                <p>故障原因</p>
+                <div class="list">
+                    <a href="javascript:;">文字</a>
+                    <a href="javascript:;">文字</a>
+                    <a href="javascript:;">文字</a>
+                    <a href="javascript:;">文字</a>
+                    <a href="javascript:;">文字</a>
+                </div>
+            </div>
+            <div class="box2">
+
+                <div class="ibox-content">
+                    <form id="my-awesome-dropzone" class="dropzone" action="form_file_upload.html#">
+                        <span class="divs"></span>
+                    </form>
+                </div>
+
+                <!--
+                <div class="ibox-content">
+                    <form id="my-awesome-dropzone" class="dropzone divs" action="form_file_upload.html#">
+                        <span class="divs"></span>
+                    </form>
+                </div>
+-->
+
+            </div>
+
+            <div class="box3">
+                <span>留言</span>
+                <textarea name="">
+
+                </textarea>
+            </div>
+            <div class="box4 clearfix">
+                <span class="col-xs-6" style="padding: 0 0 0 .16rem;color: #105d7d;font-size: .22rem;">是否需要助理</span>
+                <div class="col-xs-6" style="padding: 0;">
+                    <div class='row'>
+                        <div class='btn-switch'>
+                            <input type='checkbox' id='switch'>
+                            <label for='switch'><span></span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="content content1 clearfix">
+                    <span>内容：</span>
+                    <textarea name="">
+
+                    </textarea>
+                </div>
+            </div>
+            <div class="box5 clearfix">
+                <span class="col-xs-4 span1">需要人数</span>
+                <div class="col-xs-8 div1 text-right">
+                    <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box6">
+                <div class="content clearfix">
+                    <span>需要工具</span>
+                    <textarea name="">
+
+                    </textarea>
+                </div>
+            </div>
+            <!--  底部  -->
+            <div class="z-footer">
+                <div class="col-xs-3">提 交</div>
+                <div class="col-xs-9">取 消</div>
+            </div>
+            <div class="z-foot"></div>
+        </div>
+    </div>
+    <script src="publish/js/jquery-1.8.3.min.js"></script>
+    <script src="publish/js/common.js"></script>
+    <!--    <script src="js/prefixfree.min.js"></script>-->
+    <script src="js/dropzone.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            Dropzone.options.myAwesomeDropzone = {
+                autoProcessQueue: false,
+                uploadMultiple: true,
+                parallelUploads: 100,
+                maxFiles: 100,
+                init: function() {
+                    var myDropzone = this;
+                    this.element.querySelector("button[type=submit]").addEventListener("click", function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        myDropzone.processQueue()
+                    });
+                    this.on("sendingmultiple", function() {});
+                    this.on("successmultiple", function(files, response) {});
+                    this.on("errormultiple", function(files, response) {})
+                }
+            }
+        });
+
+    </script>
+
+    <script>
+        $(function() {
+            $("#switch").click(function() {
+                if ($("#switch").is(':checked')) {
+                    $(".content1").toggle();
+                    $(".box5").show();
+                    $(".box6").show();
+                } else {
+                    $(".content1").toggle();
+                    $(".box5").hide();
+                    $(".box6").hide();
+                }
+            })
+        })
+
+    </script>
+    <script type="text/javascript">
+        //        /*人数+1*/
+        //        function numAdd() {
+        //            var num_add = parseInt($("#quantity").val()) + 1;
+        //            if ($("#quantity").val() == "") {
+        //                num_add = 1;
+        //            }
+        //            $("#quantity").val(num_add);
+        //            var total = parseFloat($("#price").val()) * parseInt($("#quantity").val());
+        //            $("#totalPrice").html(total.toFixed(2));
+        //        }
+        //        /*人数-1*/
+        //        function numDec() {
+        //            var num_dec = parseInt($("#quantity").val()) - 1;
+        //            if (num_dec < 0) {
+        //                //人数必须大于或等于1
+        //                //                alert("not lt 1");
+        //            } else {
+        //                $("#quantity").val(num_dec);
+        //                var total = parseFloat($("#price").val()) * parseInt($("#quantity").val());
+        //                $("#totalPrice").html(total.toFixed(2));
+        //            }
+        //        }
+
+    </script>
+    <script>
+        $(function() {
+            $(".list a").click(function() {
+                if ($(this).hasClass("on")) {
+                    $(this).removeClass("on");
+                } else {
+                    $(this).addClass("on");
+                }
+
+            })
+        })
+
+    </script>
+</body>
+
+</html>

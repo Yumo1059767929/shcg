@@ -1,0 +1,52 @@
+.zList {
+    width: 100%;
+    height: auto;
+}
+
+.zList li {
+    width: 100%;
+    height: 1.5rem;
+    border-bottom: 1px solid #aaaaaa;
+    background: #fff;
+    line-height: 1.5rem;
+    padding: 0 .1rem;
+}
+
+.zList li div {
+    padding: 0;
+    text-align: center;
+}
+
+.zList li a div:nth-child(1) {
+    height: 100%;
+    padding-top: .12rem;
+    text-align: left;
+    font-size: .18rem;
+    color: #7d7d7d;
+    line-height: .32rem;
+    padding-left: .1rem;
+}
+
+@media screen and (max-width:320px) {
+    .zList li {
+        width: 100%;
+        height: 1.84rem;
+        line-height: 1.7rem;
+        padding: 0 .1rem;
+    }
+    .zList li a div:nth-child(1) {
+        padding-top: 0.15rem;
+    }
+}
+
+.zList li a div:nth-child(2) img {
+    width: .99rem;
+    height: .45rem;
+    vertical-align: middle;
+}
+
+.zList li .zList-tit {
+    font-size: .24rem;
+    color: #115d7d;
+    line-height: .48rem;
+}

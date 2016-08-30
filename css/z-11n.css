@@ -1,0 +1,26 @@
+.zList li a div:nth-child(2) img {
+    width: .23rem;
+    height: .38rem;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.zList li a div:nth-child(1) {
+    padding-right: .2rem;
+}
+
+.zList li a div:nth-child(1) span {
+    margin-left: .1rem;
+    padding: .03rem;
+    font-size: .18rem;
+}
+
+.z-y {
+    border: 1px solid #115e7c;
+    color: #115e7c;
+}
+
+.z-w {
+    border: 1px solid #ea9c47;
+    color: #ea9c47;
+}

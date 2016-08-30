@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>工作记录表</title>
+    <link rel="stylesheet" type="text/css" href="publish/css/base.css">
+    <link rel="stylesheet" type="text/css" href="publish/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="publish/css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/z-1n.css">
+    <link rel="stylesheet" type="text/css" href="css/z-12n.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <!--    时间    -->
+        <div class="z-date">
+            <div class="col-xs-3">日期</div>
+            <div class="col-xs-9">
+                <select name="year1" class="year"></select>
+                <select name="month1" class="month"></select>
+                <select name="day1" class="day"></select>
+            </div>
+
+        </div>
+        <!--   列表    -->
+        <ul class="zList">
+            <li style="border-top:1px solid #aaaaaa;">
+                <a href="#">
+                    <div class="col-xs-10">
+                        <p class="zList-tit">B座5层男卫</p>
+                        <p>作业者：张三；李四；王五</p>
+                        <p>时间：2016-06-02 12:12:12</p>
+                    </div>
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-1"><img src="images/z-right.png" alt=""></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="col-xs-10">
+                        <p class="zList-tit">B座5层女卫</p>
+                        <p>作业者：张三；李四；王五</p>
+                        <p>时间：2016-06-02 12:12:12</p>
+                    </div>
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-1"><img src="images/z-right.png" alt=""></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="col-xs-10">
+                        <p class="zList-tit">B座电梯间</p>
+                        <p>作业者：张三；李四；王五</p>
+                        <p>时间：2016-06-02 12:12:12</p>
+                    </div>
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-1"><img src="images/z-right.png" alt=""></div>
+                </a>
+            </li>
+
+        </ul>
+        <div class="z-an">
+            <a href="#" class="z-btn">报修</a>
+        </div>
+
+
+    </div>
+    <script src="publish/js/common.js"></script>
+    <script src="js/YMDClass.mini.js"></script>
+    <script>
+        new YMDselect('year1', 'month1', 'day1');
+
+    </script>
+</body>
+
+</html>
